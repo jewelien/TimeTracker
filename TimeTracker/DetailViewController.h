@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "Project.h"
+#import "DetailTableVIewDatasource.h"
 @interface DetailViewController : UIViewController
 
 @property (nonatomic, strong) Project *project;
+@property (nonatomic, strong) DetailTableVIewDatasource *datasource;
+
+
 
 
 @end

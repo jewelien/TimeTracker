@@ -19,9 +19,20 @@
 
 @implementation DetailViewController
 
+-(instancetype)init{
+    self = [super init];{
+        self.datasource = [DetailTableVIewDatasource new];
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.tableView.dataSource = self.datasource;
+    
+
 }
 - (IBAction)addButtonPressed:(id)sender {
 }
