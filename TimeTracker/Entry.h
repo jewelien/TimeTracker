@@ -10,4 +10,7 @@
 
 @interface Entry : NSObject
 
+@property (nonatomic, strong) NSDate *startTime;
+@property (nonatomic, strong) NSDate *endTime;
+
 @end

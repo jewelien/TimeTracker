@@ -10,4 +10,24 @@
 
 @implementation Project
 
+-(id)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    if (self) {
+        self.title = dictionary[titleKey];
+        self.entries = dictionary[entriesKey];
+    }
+    return self;
+}
+
+-(NSDictionary *)projectDictionary {
+    NSMutableDictionary *projectDictionary = [NSMutableDictionary new];
+    if (self.title){
+        [projectDictionary setObject:self.title forKey:titleKey];
+    }
+    if (self.entries){
+        [projectDictionary setObject:self.entries forKey:entriesKey];
+    }
+    return projectDictionary;
+}
+
 @end

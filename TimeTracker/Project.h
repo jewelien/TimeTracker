@@ -9,12 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "Entry.h"
 
+static NSString *titleKey = @"title";
+static NSString *entriesKey = @"entries";
+
 @interface Project : NSObject
 
--(void)addEntry:(Entry *)entries;
--(void)removeEntry:(Entry *)entries;
+@property(nonatomic, strong) NSString *title;
+@property(nonatomic, strong) NSArray *entries;
 
 
 
+-(void)addEntry:(Entry *)entry;
+-(void)removeEntry:(Entry *)entry;
+
+-(id)initWithDictionary:(NSDictionary *)dictionary;
+-(NSDictionary *)projectDictionary;
 
 @end

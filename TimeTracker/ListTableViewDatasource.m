@@ -7,15 +7,20 @@
 //
 
 #import "ListTableViewDatasource.h"
+#import "ProjectController.h"
+#import "Project.h"
 
 @implementation ListTableViewDatasource
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+    return [ProjectController sharedInstance].projects.count ;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
+    Project *project = [ProjectController sharedInstance].projects[indexPath.row];
+    cell.textLabel.text = project.title;
+    return cell;
 }
 @end

@@ -17,6 +17,9 @@
 		FCDB223C1A9686380016A39F /* ListTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB223B1A9686380016A39F /* ListTableViewDatasource.m */; };
 		FCDB223F1A9689C90016A39F /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB223E1A9689C90016A39F /* Project.m */; };
 		FCDB22421A968B5C0016A39F /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22411A968B5C0016A39F /* Entry.m */; };
+		FCDB22451A968FD20016A39F /* ProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22441A968FD20016A39F /* ProjectController.m */; };
+		FCDB224C1A969A240016A39F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB224A1A969A240016A39F /* DetailViewController.m */; };
+		FCDB224D1A969A240016A39F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDB224B1A969A240016A39F /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		FCDB223E1A9689C90016A39F /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		FCDB22401A968B5B0016A39F /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		FCDB22411A968B5C0016A39F /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		FCDB22431A968FD20016A39F /* ProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectController.h; sourceTree = "<group>"; };
+		FCDB22441A968FD20016A39F /* ProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectController.m; sourceTree = "<group>"; };
+		FCDB22491A969A240016A39F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FCDB224A1A969A240016A39F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FCDB224B1A969A240016A39F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,13 @@
 				FCDB223B1A9686380016A39F /* ListTableViewDatasource.m */,
 				FCDB223D1A9689C90016A39F /* Project.h */,
 				FCDB223E1A9689C90016A39F /* Project.m */,
+				FCDB22431A968FD20016A39F /* ProjectController.h */,
+				FCDB22441A968FD20016A39F /* ProjectController.m */,
 				FCDB22401A968B5B0016A39F /* Entry.h */,
 				FCDB22411A968B5C0016A39F /* Entry.m */,
+				FCDB22491A969A240016A39F /* DetailViewController.h */,
+				FCDB224A1A969A240016A39F /* DetailViewController.m */,
+				FCDB224B1A969A240016A39F /* DetailViewController.xib */,
 				FCDB221B1A96854C0016A39F /* Main.storyboard */,
 				FCDB221E1A96854C0016A39F /* Images.xcassets */,
 				FCDB22201A96854C0016A39F /* LaunchScreen.xib */,
@@ -217,6 +230,7 @@
 				FCDB221D1A96854C0016A39F /* Main.storyboard in Resources */,
 				FCDB22221A96854C0016A39F /* LaunchScreen.xib in Resources */,
 				FCDB221F1A96854C0016A39F /* Images.xcassets in Resources */,
+				FCDB224D1A969A240016A39F /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +251,8 @@
 				FCDB22421A968B5C0016A39F /* Entry.m in Sources */,
 				FCDB22171A96854C0016A39F /* AppDelegate.m in Sources */,
 				FCDB22141A96854C0016A39F /* main.m in Sources */,
+				FCDB224C1A969A240016A39F /* DetailViewController.m in Sources */,
+				FCDB22451A968FD20016A39F /* ProjectController.m in Sources */,
 				FCDB223C1A9686380016A39F /* ListTableViewDatasource.m in Sources */,
 				FCDB223F1A9689C90016A39F /* Project.m in Sources */,
 				FCDB22391A9685B30016A39F /* ListViewController.m in Sources */,
