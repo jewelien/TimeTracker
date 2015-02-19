@@ -7,8 +7,10 @@
 //
 
 #import "DetailViewController.h"
+#import "ProjectController.h"
 
-@interface DetailViewController ()
+@interface DetailViewController () <UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -33,6 +35,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    
+    self.project.title = textField.text;
+    [[ProjectController sharedInstance]synchronize];
+    return YES;
+    
+    
 }
 
 /*

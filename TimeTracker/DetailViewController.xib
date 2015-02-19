@@ -24,6 +24,9 @@
                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="65" y="63" width="270" height="30"/>
                     </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="git-I7-Sl3"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8e-eN-IM1">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
