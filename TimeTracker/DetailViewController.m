@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
+
+
 @end
 
 @implementation DetailViewController
@@ -31,7 +33,7 @@
     [super viewDidLoad];
 
     self.tableView.dataSource = self.datasource;
-    
+    self.datasource.project = self.project;
 
 }
 - (IBAction)addButtonPressed:(id)sender {

@@ -9,7 +9,10 @@
 #import "ListViewController.h"
 #import "ListTableViewDatasource.h"
 
-@interface ListViewController ()
+#import "ProjectController.h"
+#import "DetailViewController.h"
+
+@interface ListViewController () <UITableViewDelegate>
 
 @property(nonatomic, strong) ListTableViewDatasource *datasource;
 @property(nonatomic, strong) UITableView *tableView;
@@ -41,6 +44,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    Project *project = [ProjectController sharedInstance].projects[indexPath.row];
+    
+    DetailViewController *detailViewController = [DetailViewController new];
+    detailViewController.project = project;
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    
 }
 
 /*

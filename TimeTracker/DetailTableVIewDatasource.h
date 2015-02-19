@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Project.h"
 
 @interface DetailTableVIewDatasource : NSObject <UITableViewDataSource>
+
+@property (nonatomic, strong)Project *project;
 
 
 
