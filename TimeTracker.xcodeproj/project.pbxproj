@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		FCDB22141A96854C0016A39F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22131A96854C0016A39F /* main.m */; };
 		FCDB22171A96854C0016A39F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22161A96854C0016A39F /* AppDelegate.m */; };
-		FCDB221A1A96854C0016A39F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22191A96854C0016A39F /* ViewController.m */; };
 		FCDB221D1A96854C0016A39F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCDB221B1A96854C0016A39F /* Main.storyboard */; };
 		FCDB221F1A96854C0016A39F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDB221E1A96854C0016A39F /* Images.xcassets */; };
 		FCDB22221A96854C0016A39F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDB22201A96854C0016A39F /* LaunchScreen.xib */; };
 		FCDB222E1A96854C0016A39F /* TimeTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB222D1A96854C0016A39F /* TimeTrackerTests.m */; };
+		FCDB22391A9685B30016A39F /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22381A9685B30016A39F /* ListViewController.m */; };
+		FCDB223C1A9686380016A39F /* ListTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB223B1A9686380016A39F /* ListTableViewDatasource.m */; };
+		FCDB223F1A9689C90016A39F /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB223E1A9689C90016A39F /* Project.m */; };
+		FCDB22421A968B5C0016A39F /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22411A968B5C0016A39F /* Entry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,20 @@
 		FCDB22131A96854C0016A39F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCDB22151A96854C0016A39F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCDB22161A96854C0016A39F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FCDB22181A96854C0016A39F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FCDB22191A96854C0016A39F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FCDB221C1A96854C0016A39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCDB221E1A96854C0016A39F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FCDB22211A96854C0016A39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FCDB22271A96854C0016A39F /* TimeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDB222C1A96854C0016A39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCDB222D1A96854C0016A39F /* TimeTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeTrackerTests.m; sourceTree = "<group>"; };
+		FCDB22371A9685B30016A39F /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		FCDB22381A9685B30016A39F /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		FCDB223A1A9686380016A39F /* ListTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewDatasource.h; sourceTree = "<group>"; };
+		FCDB223B1A9686380016A39F /* ListTableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewDatasource.m; sourceTree = "<group>"; };
+		FCDB223D1A9689C90016A39F /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		FCDB223E1A9689C90016A39F /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		FCDB22401A968B5B0016A39F /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		FCDB22411A968B5C0016A39F /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,14 @@
 			children = (
 				FCDB22151A96854C0016A39F /* AppDelegate.h */,
 				FCDB22161A96854C0016A39F /* AppDelegate.m */,
-				FCDB22181A96854C0016A39F /* ViewController.h */,
-				FCDB22191A96854C0016A39F /* ViewController.m */,
+				FCDB22371A9685B30016A39F /* ListViewController.h */,
+				FCDB22381A9685B30016A39F /* ListViewController.m */,
+				FCDB223A1A9686380016A39F /* ListTableViewDatasource.h */,
+				FCDB223B1A9686380016A39F /* ListTableViewDatasource.m */,
+				FCDB223D1A9689C90016A39F /* Project.h */,
+				FCDB223E1A9689C90016A39F /* Project.m */,
+				FCDB22401A968B5B0016A39F /* Entry.h */,
+				FCDB22411A968B5C0016A39F /* Entry.m */,
 				FCDB221B1A96854C0016A39F /* Main.storyboard */,
 				FCDB221E1A96854C0016A39F /* Images.xcassets */,
 				FCDB22201A96854C0016A39F /* LaunchScreen.xib */,
@@ -219,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCDB221A1A96854C0016A39F /* ViewController.m in Sources */,
+				FCDB22421A968B5C0016A39F /* Entry.m in Sources */,
 				FCDB22171A96854C0016A39F /* AppDelegate.m in Sources */,
 				FCDB22141A96854C0016A39F /* main.m in Sources */,
+				FCDB223C1A9686380016A39F /* ListTableViewDatasource.m in Sources */,
+				FCDB223F1A9689C90016A39F /* Project.m in Sources */,
+				FCDB22391A9685B30016A39F /* ListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
