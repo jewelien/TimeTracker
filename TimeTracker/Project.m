@@ -8,7 +8,14 @@
 
 #import "Project.h"
 
+@interface Project ()
+
+@property(nonatomic,strong)Entry *currentEntry;
+
+@end
+
 @implementation Project
+
 
 -(id)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
@@ -29,5 +36,20 @@
     }
     return projectDictionary;
 }
+-(void)startNewEntry{
+    Entry *entry = [Entry new];
+    entry.startTime = [NSDate date];
+    
+    self.currentEntry = entry;
+    
+    [self addEntry:entry];
+    
+}
+
+-(void)endCurrentEntry{
+    self.currentEntry.endTime = [NSDate date];
+    
+}
+
 
 @end

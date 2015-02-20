@@ -21,6 +21,8 @@
 		FCDB224C1A969A240016A39F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB224A1A969A240016A39F /* DetailViewController.m */; };
 		FCDB224D1A969A240016A39F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDB224B1A969A240016A39F /* DetailViewController.xib */; };
 		FCDB22521A96A05C0016A39F /* DetailTableVIewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22511A96A05C0016A39F /* DetailTableVIewDatasource.m */; };
+		FCDB22561A96ACC40016A39F /* CustomEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22541A96ACC40016A39F /* CustomEntryViewController.m */; };
+		FCDB22571A96ACC40016A39F /* CustomEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDB22551A96ACC40016A39F /* CustomEntryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		FCDB224B1A969A240016A39F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FCDB22501A96A05C0016A39F /* DetailTableVIewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableVIewDatasource.h; sourceTree = "<group>"; };
 		FCDB22511A96A05C0016A39F /* DetailTableVIewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableVIewDatasource.m; sourceTree = "<group>"; };
+		FCDB22531A96ACC40016A39F /* CustomEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEntryViewController.h; sourceTree = "<group>"; };
+		FCDB22541A96ACC40016A39F /* CustomEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEntryViewController.m; sourceTree = "<group>"; };
+		FCDB22551A96ACC40016A39F /* CustomEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomEntryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,9 @@
 				FCDB224B1A969A240016A39F /* DetailViewController.xib */,
 				FCDB22501A96A05C0016A39F /* DetailTableVIewDatasource.h */,
 				FCDB22511A96A05C0016A39F /* DetailTableVIewDatasource.m */,
+				FCDB22531A96ACC40016A39F /* CustomEntryViewController.h */,
+				FCDB22541A96ACC40016A39F /* CustomEntryViewController.m */,
+				FCDB22551A96ACC40016A39F /* CustomEntryViewController.xib */,
 				FCDB221B1A96854C0016A39F /* Main.storyboard */,
 				FCDB221E1A96854C0016A39F /* Images.xcassets */,
 				FCDB22201A96854C0016A39F /* LaunchScreen.xib */,
@@ -248,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDB22571A96ACC40016A39F /* CustomEntryViewController.xib in Resources */,
 				FCDB221D1A96854C0016A39F /* Main.storyboard in Resources */,
 				FCDB22221A96854C0016A39F /* LaunchScreen.xib in Resources */,
 				FCDB221F1A96854C0016A39F /* Images.xcassets in Resources */,
@@ -273,6 +282,7 @@
 				FCDB22171A96854C0016A39F /* AppDelegate.m in Sources */,
 				FCDB22141A96854C0016A39F /* main.m in Sources */,
 				FCDB224C1A969A240016A39F /* DetailViewController.m in Sources */,
+				FCDB22561A96ACC40016A39F /* CustomEntryViewController.m in Sources */,
 				FCDB22451A968FD20016A39F /* ProjectController.m in Sources */,
 				FCDB223C1A9686380016A39F /* ListTableViewDatasource.m in Sources */,
 				FCDB223F1A9689C90016A39F /* Project.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "ProjectController.h"
+#import "CustomEntryViewController.h"
 
 @interface DetailViewController () <UITextFieldDelegate>
 
@@ -37,10 +38,18 @@
 
 }
 - (IBAction)addButtonPressed:(id)sender {
+    CustomEntryViewController *customEntryViewController = [CustomEntryViewController new];
+    customEntryViewController.project = self.project;
+    [self presentViewController:customEntryViewController animated:YES completion:nil];
+    
 }
 - (IBAction)inButtonPressed:(id)sender {
+    [self.project startNewEntry];
+    [self.tableView reloadData];
 }
 - (IBAction)outButtonPressed:(id)sender {
+    [self.project endCurrentEntry];
+    [self.tableView reloadData];
 }
 - (IBAction)reportButtonPressed:(id)sender {
 }

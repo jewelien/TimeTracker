@@ -21,15 +21,23 @@
 
 @implementation ListViewController
 
--(instancetype)init
-{
-    self = [super init];
-    {
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
         self.datasource = [ListTableViewDatasource new];
-        
     }
     return self;
 }
+
+//-(instancetype)init
+//{
+//    self = [super init];
+//    {
+//        self.datasource = [ListTableViewDatasource new];
+//        
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

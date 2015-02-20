@@ -17,7 +17,8 @@ static NSString *entriesKey = @"entries";
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, strong) NSArray *entries;
 
-
+-(void)startNewEntry;
+-(void)endCurrentEntry;
 
 -(void)addEntry:(Entry *)entry;
 -(void)removeEntry:(Entry *)entry;
