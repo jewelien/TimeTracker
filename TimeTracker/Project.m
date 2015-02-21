@@ -51,5 +51,18 @@
     
 }
 
+-(void)addEntry:(Entry *)entry {
+    NSMutableArray *projectEntries = [[NSMutableArray alloc] initWithArray:self.entries];
+    [projectEntries addObject:entry];
+    self.entries = projectEntries;
+}
+
+-(void)removeEntry:(Entry *)entry {
+    NSMutableArray *projectEntries = [[NSMutableArray alloc] initWithArray:self.entries];
+    [projectEntries removeObject:entry];
+    self.entries = projectEntries;  //need to find indexPath selected to be removed
+    
+}
+
 
 @end

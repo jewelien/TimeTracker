@@ -8,6 +8,31 @@
 
 #import "Entry.h"
 
+static NSString *startTimeKey = @"startTime";
+static NSString *endTimeKey = @"endTimeKey";
+
 @implementation Entry
+
+
+-(id)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];  //??
+    if (self) {
+        self.startTime = dictionary[startTimeKey];
+        self.endTime = dictionary[endTimeKey];
+    }
+    return self;
+}
+
+-(NSDictionary *)entryDictionary{
+    NSMutableDictionary *entryDictionary = [NSMutableDictionary new];
+    if (self.startTime) {
+        [entryDictionary setObject:[NSString stringWithFormat:@"%@", self.startTime] forKey:startTimeKey];
+    }
+    if (self.endTime) {
+        [entryDictionary setObject:[NSString stringWithFormat:@"%@", self.endTime] forKey:endTimeKey];
+    }
+    return entryDictionary;
+}
+
 
 @end

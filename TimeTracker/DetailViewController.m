@@ -10,13 +10,12 @@
 #import "ProjectController.h"
 #import "CustomEntryViewController.h"
 
-@interface DetailViewController () <UITextFieldDelegate>
+@interface DetailViewController () <UITextFieldDelegate, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-
-
+@property (nonatomic, strong) DetailTableVIewDatasource *datasource;
 
 @end
 
@@ -32,11 +31,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    [self.tableView reloadData];
+    self.textField.text = self.project.title;
+    self.textField.delegate = self;
+    self.tableView.delegate = self;
+    
     self.tableView.dataSource = self.datasource;
     self.datasource.project = self.project;
+    [self.datasource registerTableView:self.tableView];
 
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
+
+
 - (IBAction)addButtonPressed:(id)sender {
     CustomEntryViewController *customEntryViewController = [CustomEntryViewController new];
     customEntryViewController.project = self.project;

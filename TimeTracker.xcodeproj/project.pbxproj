@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FCDB22141A96854C0016A39F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22131A96854C0016A39F /* main.m */; };
 		FCDB22171A96854C0016A39F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB22161A96854C0016A39F /* AppDelegate.m */; };
-		FCDB221D1A96854C0016A39F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCDB221B1A96854C0016A39F /* Main.storyboard */; };
 		FCDB221F1A96854C0016A39F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDB221E1A96854C0016A39F /* Images.xcassets */; };
 		FCDB22221A96854C0016A39F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDB22201A96854C0016A39F /* LaunchScreen.xib */; };
 		FCDB222E1A96854C0016A39F /* TimeTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB222D1A96854C0016A39F /* TimeTrackerTests.m */; };
@@ -41,7 +40,6 @@
 		FCDB22131A96854C0016A39F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCDB22151A96854C0016A39F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCDB22161A96854C0016A39F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FCDB221C1A96854C0016A39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCDB221E1A96854C0016A39F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FCDB22211A96854C0016A39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FCDB22271A96854C0016A39F /* TimeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +116,6 @@
 				FCDB22531A96ACC40016A39F /* CustomEntryViewController.h */,
 				FCDB22541A96ACC40016A39F /* CustomEntryViewController.m */,
 				FCDB22551A96ACC40016A39F /* CustomEntryViewController.xib */,
-				FCDB221B1A96854C0016A39F /* Main.storyboard */,
 				FCDB221E1A96854C0016A39F /* Images.xcassets */,
 				FCDB22201A96854C0016A39F /* LaunchScreen.xib */,
 				FCDB22111A96854C0016A39F /* Supporting Files */,
@@ -257,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCDB22571A96ACC40016A39F /* CustomEntryViewController.xib in Resources */,
-				FCDB221D1A96854C0016A39F /* Main.storyboard in Resources */,
 				FCDB22221A96854C0016A39F /* LaunchScreen.xib in Resources */,
 				FCDB221F1A96854C0016A39F /* Images.xcassets in Resources */,
 				FCDB224D1A969A240016A39F /* DetailViewController.xib in Resources */,
@@ -310,14 +306,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FCDB221B1A96854C0016A39F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCDB221C1A96854C0016A39F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCDB22201A96854C0016A39F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,6 +466,7 @@
 				FCDB22331A96854C0016A39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCDB22341A96854C0016A39F /* Build configuration list for PBXNativeTarget "TimeTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +475,7 @@
 				FCDB22361A96854C0016A39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

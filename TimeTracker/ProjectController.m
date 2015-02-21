@@ -19,9 +19,15 @@ static NSString *projectKey = @"project";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [ProjectController new];
+        [sharedInstance loadFromDefaults];
     });
     return sharedInstance;
 }
+
+//-(void)setProjects:(NSArray*)projects {
+//    self.projects = projects;
+//    [self synchronize];
+//}
 
 
 -(void)loadFromDefaults {
@@ -40,6 +46,19 @@ static NSString *projectKey = @"project";
     }
     [[NSUserDefaults standardUserDefaults] setObject:projectDictionaries forKey:projectKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+-(void)addProject:(Project *)project {
+    NSMutableArray *projectsList = [[NSMutableArray alloc] initWithArray:self.projects];
+    [projectsList addObject:project];
+    self.projects = projectsList;
+    
+}
+-(void)removeProject:(Project *)project {
+    NSMutableArray *projectsList = [[NSMutableArray alloc] initWithArray:self.projects];
+    [projectsList removeObject:project];
+    self.projects = projectsList;
 }
 
 @end

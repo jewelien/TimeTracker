@@ -47,7 +47,18 @@
     [self.view addSubview:self.tableView];
     self.tableView.dataSource = self.datasource;
     
+    UIBarButtonItem *plusButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewProject)];
+    self.navigationItem.rightBarButtonItem = plusButton;
+    
 }
+
+- (void)addNewProject {
+ 
+    DetailViewController *detailViewController = [DetailViewController new];
+    detailViewController.project = [Project new];
+    [self.navigationController pushViewController:detailViewController animated:YES ];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

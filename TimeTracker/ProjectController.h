@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Project.h"
 
 @interface ProjectController : NSObject
 
@@ -14,8 +15,8 @@
 
 +(ProjectController *)sharedInstance;
 
--(void)addProject;
--(void)removeProject;
+-(void)addProject:(Project *)project;
+-(void)removeProject:(Project *)project;
 
 -(void)synchronize;
 

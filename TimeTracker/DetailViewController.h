@@ -13,7 +13,7 @@
 @interface DetailViewController : UIViewController
 
 @property (nonatomic, strong) Project *project;
-@property (nonatomic, strong) DetailTableVIewDatasource *datasource;
+
 
 
 
