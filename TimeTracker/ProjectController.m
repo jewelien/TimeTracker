@@ -24,8 +24,9 @@ static NSString *projectKey = @"project";
     return sharedInstance;
 }
 
+///???
 //-(void)setProjects:(NSArray*)projects {
-//    self.projects = projects;
+//    _projects = projects;
 //    [self synchronize];
 //}
 

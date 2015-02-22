@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Entry.h"
 
-static NSString *titleKey = @"title";
-static NSString *entriesKey = @"entries";
 
 @interface Project : NSObject
 
@@ -25,5 +23,9 @@ static NSString *entriesKey = @"entries";
 
 -(id)initWithDictionary:(NSDictionary *)dictionary;
 -(NSDictionary *)projectDictionary;
+
+-(NSString *)projectTime;
+
+-(void)synchronize;
 
 @end

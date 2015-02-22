@@ -9,8 +9,9 @@
 #import "DetailViewController.h"
 #import "ProjectController.h"
 #import "CustomEntryViewController.h"
+@import MessageUI;
 
-@interface DetailViewController () <UITextFieldDelegate, UITableViewDelegate>
+@interface DetailViewController () <UITextFieldDelegate, UITableViewDelegate, MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
@@ -21,13 +22,29 @@
 
 @implementation DetailViewController
 
--(instancetype)init{
-    self = [super init];{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
         self.datasource = [DetailTableVIewDatasource new];
     }
     return self;
 }
 
+//-(instancetype)init{
+//    self = [super init];{
+//        self.datasource = [DetailTableVIewDatasource new];
+//    }
+//    return self;
+//}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,19 +52,14 @@
     [self.tableView reloadData];
     self.textField.text = self.project.title;
     self.textField.delegate = self;
+    self.timeLabel.text = [self.project projectTime];
     self.tableView.delegate = self;
     
     self.tableView.dataSource = self.datasource;
     self.datasource.project = self.project;
-    [self.datasource registerTableView:self.tableView];
-
-}
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+//    [self.datasource registerTableView:self.tableView];
+//    
     
-    [self.tableView reloadData];
 }
 
 
@@ -67,6 +79,21 @@
     [self.tableView reloadData];
 }
 - (IBAction)reportButtonPressed:(id)sender {
+    MFMailComposeViewController *mailViewController = [MFMailComposeViewController new];
+    mailViewController.mailComposeDelegate = self;
+    
+    NSString *messageBody;
+    
+    for (Entry *entry in self.project.entries) {
+        messageBody = [NSString stringWithFormat:@"%@ to %@", entry.startTime, entry.endTime];
+    }
+    
+    [mailViewController setMessageBody:messageBody isHTML:NO];
+    [self presentViewController:mailViewController animated:YES completion:nil];
+}
+
+-(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

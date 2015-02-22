@@ -83,6 +83,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0506AE1A9A372500F61D7A /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				FCDB22491A969A240016A39F /* DetailViewController.h */,
+				FCDB224A1A969A240016A39F /* DetailViewController.m */,
+				FCDB224B1A969A240016A39F /* DetailViewController.xib */,
+				FCDB22501A96A05C0016A39F /* DetailTableVIewDatasource.h */,
+				FCDB22511A96A05C0016A39F /* DetailTableVIewDatasource.m */,
+				FCDB22531A96ACC40016A39F /* CustomEntryViewController.h */,
+				FCDB22541A96ACC40016A39F /* CustomEntryViewController.m */,
+				FCDB22551A96ACC40016A39F /* CustomEntryViewController.xib */,
+			);
+			name = DetailView;
+			sourceTree = "<group>";
+		};
 		FCDB22051A96854C0016A39F = {
 			isa = PBXGroup;
 			children = (
@@ -106,16 +121,9 @@
 			children = (
 				FCDB22151A96854C0016A39F /* AppDelegate.h */,
 				FCDB22161A96854C0016A39F /* AppDelegate.m */,
-				FCDB224F1A96A0120016A39F /* LIstView */,
 				FCDB224E1A969FF10016A39F /* Model */,
-				FCDB22491A969A240016A39F /* DetailViewController.h */,
-				FCDB224A1A969A240016A39F /* DetailViewController.m */,
-				FCDB224B1A969A240016A39F /* DetailViewController.xib */,
-				FCDB22501A96A05C0016A39F /* DetailTableVIewDatasource.h */,
-				FCDB22511A96A05C0016A39F /* DetailTableVIewDatasource.m */,
-				FCDB22531A96ACC40016A39F /* CustomEntryViewController.h */,
-				FCDB22541A96ACC40016A39F /* CustomEntryViewController.m */,
-				FCDB22551A96ACC40016A39F /* CustomEntryViewController.xib */,
+				FCDB224F1A96A0120016A39F /* LIstView */,
+				FC0506AE1A9A372500F61D7A /* DetailView */,
 				FCDB221E1A96854C0016A39F /* Images.xcassets */,
 				FCDB22201A96854C0016A39F /* LaunchScreen.xib */,
 				FCDB22111A96854C0016A39F /* Supporting Files */,

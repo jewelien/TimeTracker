@@ -129,18 +129,18 @@
                     <exclude reference="E8e-eN-IM1"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="V8R-vv-Mdj"/>
+                    <exclude reference="XbG-P5-s6n"/>
                     <exclude reference="1IC-7A-3F5"/>
                     <exclude reference="2XO-6s-fPj"/>
                     <exclude reference="qbF-n2-9T9"/>
+                    <exclude reference="bhG-h7-mqR"/>
+                    <exclude reference="ffW-fF-LBx"/>
                     <exclude reference="BgP-PG-GfV"/>
                     <exclude reference="HcF-tQ-mHd"/>
                     <exclude reference="Hna-Pm-QrY"/>
                     <exclude reference="i01-4T-EdS"/>
                     <exclude reference="pSt-tm-o1T"/>
-                    <exclude reference="V8R-vv-Mdj"/>
-                    <exclude reference="XbG-P5-s6n"/>
-                    <exclude reference="bhG-h7-mqR"/>
-                    <exclude reference="ffW-fF-LBx"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -151,18 +151,18 @@
                     <include reference="E8e-eN-IM1"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="V8R-vv-Mdj"/>
+                    <include reference="XbG-P5-s6n"/>
                     <include reference="1IC-7A-3F5"/>
                     <include reference="2XO-6s-fPj"/>
                     <include reference="qbF-n2-9T9"/>
+                    <include reference="bhG-h7-mqR"/>
+                    <include reference="ffW-fF-LBx"/>
                     <include reference="BgP-PG-GfV"/>
                     <include reference="HcF-tQ-mHd"/>
                     <include reference="Hna-Pm-QrY"/>
                     <include reference="i01-4T-EdS"/>
                     <include reference="pSt-tm-o1T"/>
-                    <include reference="V8R-vv-Mdj"/>
-                    <include reference="XbG-P5-s6n"/>
-                    <include reference="bhG-h7-mqR"/>
-                    <include reference="ffW-fF-LBx"/>
                 </mask>
             </variation>
         </view>

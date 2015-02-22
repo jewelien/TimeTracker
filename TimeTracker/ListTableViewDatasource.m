@@ -8,9 +8,14 @@
 
 #import "ListTableViewDatasource.h"
 #import "ProjectController.h"
-#import "Project.h"
+
+static NSString *listCell = @"listCell";
 
 @implementation ListTableViewDatasource
+
+//- (void)registerTableView:(UITableView *)tableView {
+//    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:listCell];
+//}
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -18,9 +23,17 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:listCell];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:listCell];
+    }
+    
     Project *project = [ProjectController sharedInstance].projects[indexPath.row];
     cell.textLabel.text = project.title;
+//    cell.detailTextLabel.text = project.projectTime;
+    
     return cell;
 }
 @end

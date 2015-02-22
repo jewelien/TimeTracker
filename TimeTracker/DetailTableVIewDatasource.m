@@ -12,9 +12,9 @@ static NSString *entryCell = @"entryCell";
 
 @implementation DetailTableVIewDatasource
 
--(void)registerTableView:(UITableView *)tableView {
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:entryCell];
-}
+//-(void)registerTableView:(UITableView *)tableView {
+//    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:entryCell];
+//}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.project.entries count];
@@ -22,7 +22,8 @@ static NSString *entryCell = @"entryCell";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:entryCell forIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:entryCell forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:entryCell];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:entryCell];
     }
@@ -31,5 +32,6 @@ static NSString *entryCell = @"entryCell";
     
     return cell;
 }
+
 
 @end

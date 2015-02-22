@@ -29,6 +29,10 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
 //-(instancetype)init
 //{
 //    self = [super init];
@@ -46,6 +50,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.tableView];
     self.tableView.dataSource = self.datasource;
+//    [self.datasource registerTableView:self.tableView];
     
     UIBarButtonItem *plusButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewProject)];
     self.navigationItem.rightBarButtonItem = plusButton;
@@ -53,9 +58,12 @@
 }
 
 - (void)addNewProject {
- 
+    
+    Project *project = [Project new];
+    [[ProjectController sharedInstance] addProject:project];
+    
     DetailViewController *detailViewController = [DetailViewController new];
-    detailViewController.project = [Project new];
+    detailViewController.project = project;
     [self.navigationController pushViewController:detailViewController animated:YES ];
 }
 

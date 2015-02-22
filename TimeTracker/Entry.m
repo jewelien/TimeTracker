@@ -26,10 +26,10 @@ static NSString *endTimeKey = @"endTimeKey";
 -(NSDictionary *)entryDictionary{
     NSMutableDictionary *entryDictionary = [NSMutableDictionary new];
     if (self.startTime) {
-        [entryDictionary setObject:[NSString stringWithFormat:@"%@", self.startTime] forKey:startTimeKey];
+        [entryDictionary setObject:self.startTime forKey:startTimeKey];
     }
     if (self.endTime) {
-        [entryDictionary setObject:[NSString stringWithFormat:@"%@", self.endTime] forKey:endTimeKey];
+        [entryDictionary setObject:self.endTime forKey:endTimeKey];
     }
     return entryDictionary;
 }

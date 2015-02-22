@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong)Project *project;
 
--(void)registerTableView:(UITableView *)tableView;
+//-(void)registerTableView:(UITableView *)tableView;
 
 
 @end
